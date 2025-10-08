@@ -5,7 +5,8 @@
 *, * >, body, html {
   padding: 0;
   margin: 0;
-  
+  box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 .barlow-reg {
@@ -21,8 +22,16 @@
 @theme {
   --color-white : #D0D6F9 ;
   --color-white-Pure : #FFFFFF ; 
-  --spacing-header : 24px;
+  --spacing-header-mobile : 24px;
+  --spacing-header-Tablet:40px;
+  --spacing-header-desktop:64px;
   --spacing-nav-mobile : 88px;
+  --spacing-nav-Tablet : 224px;
+  --spacing-nav-desktop : 150px;
+  --spacing-desktop : 165px;
+  --width-tablet : 514px;
+  --breakpoint-sm: 660px;
+  --breakpoint-md: 660px;
 }
 
 .hover{

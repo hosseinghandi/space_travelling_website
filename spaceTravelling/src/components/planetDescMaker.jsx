@@ -1,27 +1,37 @@
+// for switching to another item, motion and anmiateprecense is used
 import { motion, AnimatePresence } from "framer-motion";
-export default function planetDescMaker ({planetData, current}) {
-    
-    const planetToRender = planetData.find(
-      (p) => p.name.toLowerCase() === current.toLowerCase())
-    
-      return (
+
+
+// this componenet takes the planet data and the current presented planet 
+// which is getting from react state
+export default function planetDescMaker({ planetData, current }) {
+  const planetToRender = planetData.find(
+    (p) => p.name.toLowerCase() === current.toLowerCase()
+  );
+
+  return (
     <AnimatePresence mode="wait">
-      <motion.section 
+      <motion.section
         key={planetToRender.name}
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        exit={{ opacity: 0}}
-        transition={{ duration: 0.6, ease: "easeInOut" }}>
+        exit={{ opacity: 0 }}
+        transition={{ duration: 0.6, ease: "easeInOut" }}
+      >
         <div
           className="flex flex-col justify-center items-center 
-                  w-full my-6 border-b-1 border-gray-500 text-white-Pure"
-                  
+                  w-full my-6 text-white-Pure lg:items-start "
         >
-          <h1 className="text-5xl  Bellefair">{planetToRender.name}</h1>
+          <h1 className="max-sm:text-4xl md:text-8xl Bellefair uppercase ">
+            {planetToRender.name}</h1>
           <p
-            className="mt-4 text-center text-[0.9375rem] 
-                                          text-white font-extralight leading-7
-                                          barlow-reg mb-6 h-[137px] 
+            className="mt-4 border-gray-500 text-center text-[0.9375rem] 
+                       text-white font-extralight leading-7
+                       barlow-reg mb-6  
+                       
+                       max-sm:border-b-1 max-sm:pb-6
+                       md:text-[1rem] md:w-tablet md:border-b-2 md:pb-7
+                       lg:text-justify
                                           "
           >
             {planetToRender.description}
@@ -29,7 +39,10 @@ export default function planetDescMaker ({planetData, current}) {
         </div>
         <div
           className="flex flex-col justify-center items-center 
-                                      text-white-Pure text-center gap-4"
+                     text-white-Pure text-center gap-4 
+                     md:flex-row md:justify-around md:w-tablet md:mx-auto
+                     min-md:mb-12"
+                    
         >
           <div>
             <p
@@ -54,5 +67,5 @@ export default function planetDescMaker ({planetData, current}) {
         </div>
       </motion.section>
     </AnimatePresence>
-    );
-  };
+  );
+}

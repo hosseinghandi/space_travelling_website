@@ -1,68 +1,164 @@
-import logo from "/assets/shared/logo.svg"
-import hamburger from "/assets/shared/icon-hamburger.svg"
-import closeTab from "/assets/shared/icon-close.svg"
+// this component should render the nav bar and adopt it to the screen size
 
-export default function Nav({ menoVisibile, setVisibile,set }) {
+// import necessary data for making the nav bar
+import logo from "/assets/shared/logo.svg";
+import hamburger from "/assets/shared/icon-hamburger.svg";
+import closeTab from "/assets/shared/icon-close.svg";
+
+export default function Nav({ menoVisibile, setVisibile, set, current }) {
   return (
-    <div className="px-header fixed w-full z-999">
+    <div className="max-sm:px-header-mobile fixed w-full z-49
+                    md:items-center md:justify-center md:h-[6rem]
+                    md:flex md:flex-row md:px-header-Tablet 
+                    lg:px-header-desktop 
+                    ">
+      {/* this div related to the holder of the nav items which for 
+      making responsive needs to be changed */}
       <nav
-        className={`flex flex-col h-[100%] fixed  
-                                w-[70vw] bg-[rgba(11,13,23,0.15)] 
-                                backdrop-blur-[40px]  z-2 text-white 
+        className={`flex fixed flex-col text-white 
+          
+                                
+                                max-sm:w-[70vw] max-sm:h-[100%] 
+                                backdrop-blur-[40px] max-sm:z-2 
                                 ${
                                   menoVisibile
-                                    ? "right-0 "
-                                    : "-right-100 opacity-0"
+                                    ? "right-0"
+                                    : "max-sm:-right-100 max-sm:opacity-0"
                                 }
-                                transform transition-all ease-in-out duration-[2100ms]
-                                `}
+                                max-sm:transform max-sm:transition-all 
+                                max-sm:ease-in-out max-sm:duration-[2100ms]
+                                
+                                md:opacity-100 
+                                md:justify-center md:items-center
+                                md:ml-[8rem] md:w-[84%] md:h-[6rem]
+                                md:z-50 md:bg-[#FFFFFF05]
+
+                                lg:md:w-[64%] lg:right-0 
+                                `
+                              
+                              /* Navigation Links */
+
+
+                              }
       >
+        {/* this div is responsibile for wrappeing 
+        the nav elements inside the holder */}
         <div
-          className="mt-30 ml-8 flex flex-col gap-[2rem] barlow 
-                                text-left"
+          className=" flex flex-col max-sm:gap-[2rem] barlow text-left
+                      max-sm:ml-8 max-sm:mt-30  md:items-center
+                      md:flex-row md:ml-[7.375rem] md:gap-[4rem] md:w-[100%] 
+                      md:h-[6rem]"
         >
-          <div className="border-r-4">
-            <a onClick={set("Home") }>
-              <span className="font-bold mr-3">00</span>Home
-            </a>
-          </div>
-          <div className="active:border-r-4 border-gray-500">
-            <a onClick={set("Destination") }>
-              <span className="font-bold mr-3">01</span>Crew
-            </a>
+          {/* home element */}
+          <div
+            onClick={() => {
+              set("Home");
+              setVisibile((prev) => !prev);
+            }}
+            className={`z-2 ${
+              current === "Home"
+                ? "max-sm:border-r-4 md:border-b-2 md:scale-125 "
+                : "max-sm:active:border-r-4 border-gray-500 md:active:border-b-2"
+            }      md:h-[80%] md:flex md:flex-col md:items-center md:justify-center`
+              }
+          >
+            <div>
+              <span className="font-bold mr-3 md:mr-2">00</span>Home
+            </div>
           </div>
 
-          <div className="active:border-r-4 border-gray-500">
-            <a onClick={set("Crew") }>
-              <span className="font-bold mr-3">02</span> Destination
-            </a>
+          {/*  Crew */}
+          <div
+            onClick={() => {
+              console.log("clicked")
+              set("Crew");
+              setVisibile((prev) => !prev);
+            }}
+            className={`z-2 ${
+              current === "Crew"
+                ? "max-sm:border-r-4 md:border-b-2 md:scale-125 "
+                : "max-sm:active:border-r-4 border-gray-500 md:active:border-b-2"
+            }      md:h-[80%] md:flex md:flex-col md:items-center md:justify-center`
+              }
+          >
+            <div className="">
+              <span className="font-bold mr-3 md:mr-2">01</span>Crew
+            </div>
           </div>
 
-          <div className="active:border-r-4 border-gray-500">
-            <a onClick={set("Techno") }>
-              <span className="font-bold mr-3">03</span>Technology
-            </a>
+          {/*  Destination */}
+          <div
+            onClick={() => {
+              set("Destination");
+              setVisibile((prev) => !prev);
+            }}
+            className={`z-2 ${
+              current === "Destination"
+                ? "max-sm:border-r-4 md:border-b-2 md:scale-125 "
+                : "max-sm:active:border-r-4 border-gray-500 md:active:border-b-2"
+            }      md:h-[80%] md:flex md:flex-col md:items-center md:justify-center`
+              }
+          >
+            <div>
+              <span className="font-bold mr-3 md:mr-2">02</span> Destination
+            </div>
           </div>
+
+          {/* Techno */}
+          <div
+            onClick={() => {
+              set("Techno");
+              setVisibile((prev) => !prev);
+            }}
+            className={`z-2 ${
+              current === "Techno"
+                ? "max-sm:border-r-4 md:border-b-2 md:scale-125 "
+                : "max-sm:active:border-r-4 border-gray-500 md:active:border-b-2"
+            }      md:h-[80%] md:flex md:flex-col md:items-center md:justify-center`
+              }
+          >
+            <div>
+              <span className="font-bold mr-3 md:mr-2">03</span>Technology
+            </div>
+          </div>
+
         </div>
       </nav>
+      {/* logo holder which in case of mobile the those 
+      below "hamburger" and "closeTab" would be hidden*/}
       <div
         className="    flex flex-row justify-between items-center 
-                            py-header w-full z-3 relative"
+        py-header-mobile w-full max-sm:z-3 md:z-0 relative"
       >
-        <img
-          className="w-[40px] h-[40px]"
-          src={logo}
-          alt="logo of space travelling"
-        />
+        <div>
+
+          <img
+            onClick={() => {
+              set("Home");
+            }}
+            className="w-[40px] h-[40px] rotate-0 
+            active:rotate-360 hover:rotate-360 
+            
+                      hover:cursor-pointer
+                      transform transition-all duration-[2100ms] 
+                      ease-in-out 
+                      md:w-[48px] md:h-[48px] "
+            src={logo}
+            alt="logo of space travelling"
+          />
+
+        </div>
 
         <img
-          className={`absolute left-full -ml-4 
+          className={`absolute left-full -ml-4
+             
                                 ${
                                   !menoVisibile
                                     ? "opacity-100 rotate-0"
                                     : "opacity-0 rotate-90"
                                 } 
-                                transform transition-all duration-[2100ms] ease-in-out`}
+                                transform transition-all duration-[2100ms] ease-in-out
+                                md:hidden`}
           onClick={() => setVisibile((prev) => !prev)}
           src={hamburger}
           alt=" a hamburger-meno icon"
@@ -75,13 +171,17 @@ export default function Nav({ menoVisibile, setVisibile,set }) {
                                     ? "opacity-100 rotate-0"
                                     : "opacity-0 rotate-90"
                                 } 
-                                transform transition-all duration-[2200ms] ease-in-out`}
+                                transform transition-all duration-[2200ms] ease-in-out
+                                md:hidden`}
           onClick={() => setVisibile((prev) => !prev)}
           style={{}}
           src={closeTab}
           alt=" a hamburger-meno icon"
         />
       </div>
+      <div className=" max-md:hidden h-[1px] w-[40%] bg-gray-600  
+      left-21 -z-1 lg:fixed ">
+        </div>
     </div>
   );
 }
