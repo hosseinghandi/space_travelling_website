@@ -17,21 +17,26 @@ export default function planetDescMaker({ planetData, current }) {
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
         transition={{ duration: 0.6, ease: "easeInOut" }}
-      >
+       className="min-xlg:w-desktop-xlg-destination-desc">
         <div
-          className="flex flex-col justify-center items-center 
-                  w-full my-6 text-white-Pure lg:items-start "
+          className="flex flex-col justify-center items-center  
+                      w-full my-6 text-white-Pure lg:items-start "
         >
-          <h1 className="max-sm:text-4xl md:text-8xl Bellefair uppercase ">
+          <h1 className=" Bellefair uppercase 
+                          max-sm:text-4xl md:text-8xl 
+                          xlg:text-[15rem]">
             {planetToRender.name}</h1>
           <p
             className="mt-4 border-gray-500 text-center text-[0.9375rem] 
-                       text-white font-extralight leading-7
+                       text-white font-extralight max-lg:leading-7
                        barlow-reg mb-6  
                        
                        max-sm:border-b-1 max-sm:pb-6
                        md:text-[1rem] md:w-tablet md:border-b-2 md:pb-7
-                       lg:text-justify
+                       lg:text-justify lg:w-desktop-xlg-destination
+                       xlg:text-[1.75rem] 
+                       min-xlg:w-desktop-xlg-destination-desc
+                       min-xlg:h-[200px]
                                           "
           >
             {planetToRender.description}
@@ -41,28 +46,31 @@ export default function planetDescMaker({ planetData, current }) {
           className="flex flex-col justify-center items-center 
                      text-white-Pure text-center gap-4 
                      md:flex-row md:justify-around md:w-tablet md:mx-auto
-                     min-md:mb-12"
+                     min-md:mb-12 lg:w-desktop-destination
+                     lg:w-desktop-xlg-destination-desc
+                     "
                     
         >
           <div>
             <p
               className="uppercase text-[0.875rem] font-light 
-                              tracking-[2px] text-white"
+                              tracking-[2px] text-white-Pure 
+                              xlg:text-[1.75rem]"
             >
               AVG. DISTANCE
             </p>
-            <p className="text-[1.75rem] Bellefair">
+            <p className="text-[1.75rem] Bellefair xlg:text-[1.5rem]">
               {planetToRender.distance}
             </p>
           </div>
           <div>
             <p
               className="uppercase text-[0.875rem] font-light 
-                              tracking-[2px] -1text-white"
+                              tracking-[2px] text-white-Pure xlg:text-[1.75rem]"
             >
               Est. travel time
             </p>
-            <p className="text-[1.75rem] Bellefair">{planetToRender.travel}</p>
+            <p className="text-[1.75rem] Bellefair xlg:text-[1.5rem]">{planetToRender.travel}</p>
           </div>
         </div>
       </motion.section>

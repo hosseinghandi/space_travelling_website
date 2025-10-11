@@ -10,12 +10,15 @@ export default function CrewProfileMaker({ current }) {
                  md:mt-12 md:mb-6
                  lg:items-start "
     >
-      <div className="flex flex-col max-md:items-center ">
+      <div className="flex flex-col 
+                      max-md:items-center ">
         <p
           className="Bellefair text-white-Pure 
-                     uppercase opacity-50 font-light 
+                     uppercase opacity-50 font-light
+                     md:text-center lg:text-left 
                      max-sm:text-[1.125rem] 
                      md:text-[1.75rem]
+                     xlg:text-[3.5rem]
                      "
         >
           {current.role}
@@ -23,17 +26,22 @@ export default function CrewProfileMaker({ current }) {
         <p
           className="uppercase tracking-[2px] 
                      opacity-90 barlow font-light
-                     max-sm:text-[1.5rem] md:text-[2.5rem]"
+                     max-sm:text-[1.5rem] md:text-[2.5rem]
+                     xlg:text-[5.5rem]"
         >
           {current.name}
         </p>
       </div>
       <p
-        className="text-center mt-6  
-                   font-extralight leading-7 barlow-reg text-white
-                   max-sm:min-h-[170px]
-                   md:text-[1rem] md:w-tablet md:min-h-[120px]
-                   lg:text-justify"
+        className="text-center mt-4 barlow-reg text-white font-extralight
+                   max-lg:leading-7 
+                   max-sm:min-h-[150px]
+                   md:text-[1rem] md:w-tablet 
+                   md:min-h-[120px]
+                   lg:w-desktop
+                   lg:text-justify
+                   xlg:w-desktop-xlg
+                   xlg:text-[2rem]"
       >
         {current.bio}
       </p>

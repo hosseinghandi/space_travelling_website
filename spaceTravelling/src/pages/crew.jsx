@@ -23,6 +23,7 @@ export default function Crew({ data }) {
         }}
         className={`max-sm:w-[10px] max-sm:h-[10px]
                     min-md:w-[15px] min-md:h-[15px]
+                    xlg:w-[20px] xlg:h-[20px]
                         ${
                           persona.name.toLowerCase() ===
                           crewPersona.toLowerCase()
@@ -36,7 +37,7 @@ export default function Crew({ data }) {
   return (
     <>
       <div
-        className="min-h-screen overflow-scroll
+        className="min-h-screen overflow-auto scrollbar-hide
                     max-sm:bg-[url(assets/crew/background-crew-mobile.jpg)] 
                     md:bg-[url(assets/crew/background-crew-tablet.jpg)] 
                     lg:bg-[url(assets/crew/background-crew-desktop.jpg)] 
@@ -44,13 +45,15 @@ export default function Crew({ data }) {
       >
         {/* post holder  */}
         <main
-          className="       max-sm:pt-nav-mobile max-sm:px-header-mobile
+          className="       relative
+                            max-sm:pt-nav-mobile max-sm:px-header-mobile
                             md:px-header-Tablet md:pt-nav-Tablet 
                             lg:px-desktop lg:pt-nav-desktop
+                            xlg:px-desktop-xlg
+                            xlg:pt-nav-lg-desktop
                             barlow min-w-[375px] text-white-Pure"
         >
-          
-          {<TitleMaker code={"01"} text={"MEET YOUR CREW"}/>}
+          {<TitleMaker code={"01"} text={"MEET YOUR CREW"} />}
 
           {/* detail holder upper part */}
           <AnimatePresence mode="wait">
@@ -64,24 +67,31 @@ export default function Crew({ data }) {
                           lg:flex-row lg:justify-between "
             >
               <section>
-              {/* component to render the crew profile */}
-              {<CrewProfileMaker current={crewPresenting} />}
+                {/* component to render the crew profile */}
+                {<CrewProfileMaker current={crewPresenting} />}
 
-              <div className="flex flex-row gap-4 mb-4 mx-auto lg:mt-[14rem]">
-                {/* this bubble maker makes the points by which the 
+                <div
+                  className=" flex flex-row gap-4 mb-4 
+                              justify-center lg:fixed  min-lg:bottom-[45px]"
+                >
+                  {/* this bubble maker makes the points by which the 
                 crew will be altered */}
-                {bubbleMaker()}
-              </div>
+                  {bubbleMaker()}
+                </div>
               </section>
               {/* crew's image holder */}
               <div
                 className=" flex flex-col 
-                    justify-center items-center "
+                    justify-center items-center"
               >
                 <img
                   loading="lazy"
-                  className="absoulte bottom-0
-                             max-sm:max-h-[320px] md:max-h-[380px] lg:max-h-[724px]"
+                  className="min-lg:absoulte  min-md:bottom-0 
+                             max-sm:max-h-[320px] max-md:max-h-[380px] 
+                             max-lg:max-h-[50vw] min-lg:fixed min-lg:right-20
+                             max-slg:max-h-[600px]
+                             xlg:h-[40vw] xlg:right-desktop-xlg 
+                             "
                   src={`${crewPresenting.images.webp}`}
                   alt={`an image of ${crewPresenting}`}
                 />

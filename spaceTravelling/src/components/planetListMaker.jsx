@@ -14,9 +14,10 @@ export default function PlanetListMaker ({planetData,set,current}) {
                                           current.toLowerCase() === p.name.toLowerCase() &&
                                           "border-b-3 border-white"
                                         } 
-                                        w-fit h-[32px] barlow `}
+                                        w-fit h-[32px] barlow xlg:h-[80px]`}
           >
-            <span className="text-white max-sm:text-[0.85rem] md:text-[1rem] tracking-[0.15em]">
+            <span className="text-white max-sm:text-[0.85rem] md:text-[1rem] tracking-[0.15em]
+                              xlg:text-[2.5rem]">
               {p.name.toUpperCase()}
             </span>
           </div>

@@ -7,6 +7,7 @@
   margin: 0;
   box-sizing: border-box;
   overflow-x: hidden;
+  font-size: 1rem;
 }
 
 .barlow-reg {
@@ -22,16 +23,40 @@
 @theme {
   --color-white : #D0D6F9 ;
   --color-white-Pure : #FFFFFF ; 
-  --spacing-header-mobile : 24px;
-  --spacing-header-Tablet:40px;
-  --spacing-header-desktop:64px;
-  --spacing-nav-mobile : 88px;
-  --spacing-nav-Tablet : 224px;
-  --spacing-nav-desktop : 150px;
-  --spacing-desktop : 165px;
+  /* the spacing for x axis of nav bar itself */
+  --spacing-header-mobile : 1.5rem;
+  --spacing-header-Tablet: 2.5rem;
+  --spacing-header-desktop: 4rem;
+  /* the spacing of main element (context) from 
+  zero of top-0 of the page (from top of desktop) */
+  --spacing-nav-mobile :5.5rem;
+  --spacing-nav-Tablet : 10rem;
+  --spacing-nav-Tablet-home : 7.75rem;
+  --spacing-nav-desktop : 14rem;
+  --spacing-nav-lg-desktop-home : 30rem;
+  --spacing-nav-lg-desktop : 20rem;
+  /* --spacing-nav-desktop-lg : 16rem; */
+
+  /* the padding for the main element(context) 
+  from the x side of the page  */
+  --spacing-desktop : 64px;
+  --spacing-desktop-lg : 165px;
+  --spacing-desktop-xlg : 265px;
+
   --width-tablet : 514px;
+  --width-desktop : 314px;
+  --width-desktop-destination : 414px;
+  --width-desktop-xlg-destination-desc : 950px;
+  --width-desktop-xlg-technology-desc : 850px;
+  --width-desktop-xlg-home-desc : 850px;
+  --width-desktop-xlg-destination : 614px;
+  --width-desktop-xlg: 700px;
+  
   --breakpoint-sm: 660px;
   --breakpoint-md: 660px;
+  --breakpoint-lg: 980px; 
+  --breakpoint-slg: 1025px;
+  --breakpoint-xlg: 1650px;
 }
 
 .hover{
@@ -41,4 +66,11 @@
     border-right: 2px;
 } */
 
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;     /* Firefox */
+}
 
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;             /* Chrome, Safari, and Opera */
+}

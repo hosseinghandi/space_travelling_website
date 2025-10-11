@@ -5,10 +5,13 @@ export default function TitleMaker({ code, text }) {
     <div className="flex flex-col">
       {/* section intro holder */}
       <div className="flex flex-col justify-center opacity-80
-                      max-sm:items-center md:text-left 
+                      max-sm:items-center md:text-center 
+                      lg:text-left  
                       ">
-        <p className="text-[1.25rem] font-light md:text-[1.75rem]">
-          <span className="text-[1rem] md:text-[1.5rem] mr-10 font-bold opacity-50">{code}</span>
+        <p className="text-[1.25rem] font-light md:text-[1.75rem]
+                      xlg:text-[3rem]">
+          <span className=" text-[1rem] md:text-[1.5rem] mr-10 font-bold 
+                            opacity-50 xlg:text-[2rem]">{code}</span>
           {text}
         </p>
       </div>

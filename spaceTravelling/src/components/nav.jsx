@@ -10,12 +10,12 @@ export default function Nav({ menoVisibile, setVisibile, set, current }) {
     <div className="max-sm:px-header-mobile fixed w-full z-49
                     md:items-center md:justify-center md:h-[6rem]
                     md:flex md:flex-row md:px-header-Tablet 
-                    lg:px-header-desktop 
+                    lg:px-header-desktop xlg:mt-8
                     ">
       {/* this div related to the holder of the nav items which for 
       making responsive needs to be changed */}
       <nav
-        className={`flex fixed flex-col text-white 
+        className={`            flex fixed flex-col text-white 
           
                                 
                                 max-sm:w-[70vw] max-sm:h-[100%] 
@@ -33,7 +33,10 @@ export default function Nav({ menoVisibile, setVisibile, set, current }) {
                                 md:ml-[8rem] md:w-[84%] md:h-[6rem]
                                 md:z-50 md:bg-[#FFFFFF05]
 
-                                lg:md:w-[64%] lg:right-0 
+                                lg:w-[64%] lg:right-0
+                                
+                                xlg:h-[10rem] xlg:font-light
+                                xlg:w-[50%]
                                 `
                               
                               /* Navigation Links */
@@ -46,8 +49,9 @@ export default function Nav({ menoVisibile, setVisibile, set, current }) {
         <div
           className=" flex flex-col max-sm:gap-[2rem] barlow text-left
                       max-sm:ml-8 max-sm:mt-30  md:items-center
-                      md:flex-row md:ml-[7.375rem] md:gap-[4rem] md:w-[100%] 
-                      md:h-[6rem]"
+                      md:flex-row ml-[7.375rem] md:gap-[4rem] 
+                      md:h-[6rem]  md:w-[100%]
+                      xlg:text-[2rem] xlg:justify-center xlg:gap-36 xlg:ml-0"
         >
           {/* home element */}
           <div
@@ -59,11 +63,11 @@ export default function Nav({ menoVisibile, setVisibile, set, current }) {
               current === "Home"
                 ? "max-sm:border-r-4 md:border-b-2 md:scale-125 "
                 : "max-sm:active:border-r-4 border-gray-500 md:active:border-b-2"
-            }      md:h-[80%] md:flex md:flex-col md:items-center md:justify-center`
+            }      md:h-[80%] md:flex md:flex-col md:items-center md:justify-center `
               }
           >
             <div>
-              <span className="font-bold mr-3 md:mr-2">00</span>Home
+              <span className="font-bold mr-3 md:mr-2 ">00</span>Home
             </div>
           </div>
 
@@ -81,7 +85,7 @@ export default function Nav({ menoVisibile, setVisibile, set, current }) {
             }      md:h-[80%] md:flex md:flex-col md:items-center md:justify-center`
               }
           >
-            <div className="">
+            <div >
               <span className="font-bold mr-3 md:mr-2">01</span>Crew
             </div>
           </div>
@@ -128,7 +132,7 @@ export default function Nav({ menoVisibile, setVisibile, set, current }) {
       below "hamburger" and "closeTab" would be hidden*/}
       <div
         className="    flex flex-row justify-between items-center 
-        py-header-mobile w-full max-sm:z-3 md:z-0 relative"
+                        py-header-mobile w-full max-sm:z-3 md:z-0 relative"
       >
         <div>
 
@@ -142,7 +146,8 @@ export default function Nav({ menoVisibile, setVisibile, set, current }) {
                       hover:cursor-pointer
                       transform transition-all duration-[2100ms] 
                       ease-in-out 
-                      md:w-[48px] md:h-[48px] "
+                      md:w-[48px] md:h-[48px] 
+                      xlg:w-[68px] xlg:h-[68px] "
             src={logo}
             alt="logo of space travelling"
           />
@@ -179,8 +184,9 @@ export default function Nav({ menoVisibile, setVisibile, set, current }) {
           alt=" a hamburger-meno icon"
         />
       </div>
-      <div className=" max-md:hidden h-[1px] w-[40%] bg-gray-600  
-      left-21 -z-1 lg:fixed ">
+      <div className=" 
+                      max-md:hidden h-[1px] w-[50%] bg-gray-600  
+                      left-21 -z-1 lg:fixed xlg:h-[3px]">
         </div>
     </div>
   );
