@@ -15,9 +15,9 @@ export default function Destination({ data }) {
   return (
     <div
       className="   min-h-screen overflow-auto scrollbar-hide
-                    max-sm:bg-[url(./destination/background-destination-mobile.jpg)] 
-                    md:bg-[url(./destination/background-destination-tablet.jpg)] 
-                    lg:bg-[url(./destination/background-destination-desktop.jpg)] 
+                    max-sm:bg-[url(/destination/background-destination-mobile.jpg)] 
+                    md:bg-[url(/destination/background-destination-tablet.jpg)] 
+                    lg:bg-[url(/destination/background-destination-desktop.jpg)] 
                     bg-cover bg-center bg-no-repeat fixed bottom-0 top-0  w-full "
     >
       {/* post holder  */}
@@ -27,7 +27,7 @@ export default function Destination({ data }) {
                             lg:px-desktop lg:pt-nav-desktop
                             min-w-[375px] text-white-Pure
                             xlg:px-desktop-xlg
-                            xlg:pt-nav-lg-desktop "
+                            xlg:pt-nav-xlg-desktop "
       >
         <TitleMaker code={"02"} text={"PICK YOUR DESTINATION"} />
         <section
@@ -54,7 +54,7 @@ export default function Destination({ data }) {
                   className=" max-sm:w-[150px] max-sm:h-[150px] max-lg:mx-auto
                               md:w-[300px] md:h-[300px]
                               lg:min-w-[380px] lg:min-h-[380px]
-                              xlg:min-w-[700px] xlg:min-h-[700px]"
+                              xlg:min-w-[50vh] xlg:min-h-[50vh]"
                   src={`./destination/image-${planet.toLowerCase()}.webp`}
                   alt={`an image of ${planet}`}
                 />

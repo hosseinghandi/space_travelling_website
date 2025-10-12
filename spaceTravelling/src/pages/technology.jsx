@@ -15,13 +15,13 @@ export default function Techno({ data }) {
 
   return (
     <main
-      className=" 
-                  max-sm:bg-[url(./technology/background-technology-mobile.jpg)] 
-                  md:bg-[url(./technology/background-technology-tablet.jpg)] 
-                  min-lg:bg-[url(./technology/background-technology-desktop.jpg)]  
+      className=" overflow-auto scrollbar-hide
+                  max-sm:bg-[url(/technology/background-technology-mobile.jpg)] 
+                  md:bg-[url(/technology/background-technology-tablet.jpg)] 
+                  min-lg:bg-[url(/technology/background-technology-desktop.jpg)]  
                   
-                  text-white-Pure min-h-screen h-fit w-full 
-                  barlow min-w-[375px] bg-cover bg-no-repeat fixed
+                  text-white-Pure min-h-screen  w-full 
+                  barlow min-w-[375px] bg-cover bg-no-repeat 
                   
                   max-sm:pt-nav-mobile max-sm:px-header-mobile 
                   md:px-header-Tablet md:pt-nav-Tablet 
@@ -70,11 +70,11 @@ export default function Techno({ data }) {
               style={{
                 backgroundImage:
                   window.innerWidth < 768
-                    ? `url(../technology/image-${currentTechno.name
+                    ? `url(/technology/image-${currentTechno.name
                         .toLowerCase()
                         .split(" ")
                         .join("-")}-landscape.jpg)`
-                    : `url(../technology/image-${currentTechno.name
+                    : `url(/technology/image-${currentTechno.name
                         .toLowerCase()
                         .split(" ")
                         .join("-")}-portrait.jpg)`,

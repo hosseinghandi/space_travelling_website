@@ -72,7 +72,7 @@ export default function Crew({ data }) {
 
                 <div
                   className=" flex flex-row gap-4 mb-4 
-                              justify-center lg:fixed  min-lg:bottom-[45px]"
+                              justify-center min-lg:absoulte min-lg:justify-start min-lg:mt-12   "
                 >
                   {/* this bubble maker makes the points by which the 
                 crew will be altered */}
@@ -87,11 +87,12 @@ export default function Crew({ data }) {
               >
                 <img
                   loading="lazy"
-                  className="max-sm:fixed max-sm:bottom-0 
+                  className="
+                             max-sm:fixed max-sm:bottom-0 
                              min-md:bottom-0 
-                             max-sm:max-h-[320px] min-md:max-h-[380px] 
+                             max-sm:max-h-[40vh] min-md:max-h-[380px] 
                              min-lg:right-20
-                             min-lg:max-h-[50vw] min-lg:fixed 
+                             min-lg:max-h-[80vh] min-lg:fixed 
                              max-slg:max-h-[600px]
                              min-xlg:h-[40vw]
                              min-xlg:right-desktop-xlg 

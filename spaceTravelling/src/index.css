@@ -32,10 +32,10 @@
   --spacing-nav-mobile :5.5rem;
   --spacing-nav-Tablet : 10rem;
   --spacing-nav-Tablet-home : 7.75rem;
-  --spacing-nav-desktop : 14rem;
+  --spacing-nav-desktop : 25vh;
   --spacing-nav-lg-desktop-home : 30rem;
-  --spacing-nav-lg-desktop : 20rem;
-  --spacing-nav-xlg-desktop : 25rem;
+  --spacing-nav-lg-desktop : 20vh;
+  --spacing-nav-xlg-desktop : 20vh;
   --spacing-xlg-desktop-title-distance : 10rem;
 
   /* the padding for the main element(context) 

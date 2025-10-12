@@ -41,6 +41,7 @@ export default function CrewProfileMaker({ current }) {
                    md:text-[1rem] md:w-tablet 
                    md:min-h-[120px]
                    lg:w-desktop
+                   min-lg:min-h-[300px]
                    lg:text-justify
                    xlg:w-desktop-xlg
                    xlg:text-[2rem]"
