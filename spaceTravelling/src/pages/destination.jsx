@@ -15,9 +15,9 @@ export default function Destination({ data }) {
   return (
     <div
       className="   min-h-screen overflow-auto scrollbar-hide
-                    max-sm:bg-[url(../destination/background-destination-mobile.jpg)] 
-                    md:bg-[url(../destination/background-destination-tablet.jpg)] 
-                    lg:bg-[url(../destination/background-destination-desktop.jpg)] 
+                    max-sm:bg-[url(./destination/background-destination-mobile.jpg)] 
+                    md:bg-[url(./destination/background-destination-tablet.jpg)] 
+                    lg:bg-[url(./destination/background-destination-desktop.jpg)] 
                     bg-cover bg-center bg-no-repeat fixed bottom-0 top-0  w-full "
     >
       {/* post holder  */}
@@ -55,7 +55,7 @@ export default function Destination({ data }) {
                               md:w-[300px] md:h-[300px]
                               lg:min-w-[380px] lg:min-h-[380px]
                               xlg:min-w-[700px] xlg:min-h-[700px]"
-                  src={`../destination/image-${planet.toLowerCase()}.webp`}
+                  src={`./destination/image-${planet.toLowerCase()}.webp`}
                   alt={`an image of ${planet}`}
                 />
               </motion.div>
