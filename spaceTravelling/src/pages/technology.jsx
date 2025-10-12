@@ -102,8 +102,10 @@ export default function Techno({ data }) {
                         min-lg:flex-col  
                         
                         max-slg:gap-8 
+                        slg:gap-7
                         xlg:gap-11 max-xlg:justify-start
                         xlg:h-[470px]
+                        
                         "
           >
             {

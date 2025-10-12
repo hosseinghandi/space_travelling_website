@@ -39,7 +39,7 @@ export default function Nav({ menoVisibile, setVisibile, set, current }) {
                                 lg:w-[64%] lg:right-0
                                 
                                 xlg:h-[10rem] xlg:font-light
-                                xlg:w-[50%]
+                                xlg:w-[60%]
                                 `
 
           /* Navigation Links */
@@ -52,7 +52,9 @@ export default function Nav({ menoVisibile, setVisibile, set, current }) {
                       max-sm:ml-8 max-sm:mt-30  md:items-center
                       md:flex-row ml-[7.375rem] md:gap-[4rem] 
                       md:h-[6rem]  md:w-[100%]
-                      xlg:text-[2rem] xlg:justify-center xlg:gap-36 xlg:ml-0"
+                      xlg:text-[1.5rem] 
+                      xlg:justify-center 
+                      xlg:gap-36 xlg:ml-0"
         >
           {/* home element */}
           <div

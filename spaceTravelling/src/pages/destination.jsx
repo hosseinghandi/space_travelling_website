@@ -31,9 +31,10 @@ export default function Destination({ data }) {
       >
         <TitleMaker code={"02"} text={"PICK YOUR DESTINATION"} />
         <section
-          className="lg:flex lg:flex-row lg:gap-[32px] 
-                            lg:justify-between lg:items-center 
-                            xlg:justify-around "
+          className="lg:flex lg:flex-row min-lg:gap-[10vw] 
+                            min-lg:justify-around 
+                            min-lg:items-center 
+                            "
         >
           {/* image holder and title holder */}
           <section

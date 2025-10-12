@@ -33,7 +33,7 @@
   --spacing-nav-Tablet : 10rem;
   --spacing-nav-Tablet-home : 7.75rem;
   --spacing-nav-desktop : 25vh;
-  --spacing-nav-lg-desktop-home : 30rem;
+  --spacing-nav-lg-desktop-home : 20rem;
   --spacing-nav-lg-desktop : 20vh;
   --spacing-nav-xlg-desktop : 20vh;
   --spacing-xlg-desktop-title-distance : 10rem;
@@ -59,7 +59,7 @@
   --breakpoint-md: 660px;
   --breakpoint-lg: 980px; 
   --breakpoint-slg: 1024px;
-  --breakpoint-xlg: 1590px;
+  --breakpoint-xlg: 1900px;
 }
 
 .hover{
