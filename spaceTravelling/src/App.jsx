@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 //import data
 import data from "./asset/data.json";
 //pages
-import Home from "./pages/home.jsx";
+import Home from "./pages/Home.jsx";
 import Crew from "./pages/crew.jsx";
 import Destination from "./pages/destination.jsx";
 import Techno from "./pages/technology.jsx";
