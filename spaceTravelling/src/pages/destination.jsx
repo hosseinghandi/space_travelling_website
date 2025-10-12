@@ -30,13 +30,17 @@ export default function Destination({ data }) {
                             xlg:pt-nav-lg-desktop "
       >
         <TitleMaker code={"02"} text={"PICK YOUR DESTINATION"} />
-        <section className="lg:flex lg:flex-row lg:gap-[32px] 
+        <section
+          className="lg:flex lg:flex-row lg:gap-[32px] 
                             lg:justify-between lg:items-center 
-                            xlg:justify-around ">
+                            xlg:justify-around "
+        >
           {/* image holder and title holder */}
-          <section className="flex flex-col justify-center 
+          <section
+            className="flex flex-col justify-center 
                               items-center opacity-80 
-                              xlg:w-full">
+                              xlg:w-full"
+          >
             <AnimatePresence mode="wait">
               <motion.div
                 key={planet}
@@ -58,11 +62,12 @@ export default function Destination({ data }) {
             </AnimatePresence>
           </section>
 
-
           {/* description holder */}
           <section className="lg:min-h-[468px] ">
-            <section className="flex flex-row max-md:px-[40px] gap-[38px] 
-                                justify-center lg:justify-start ">
+            <section
+              className="flex flex-row max-md:px-[40px] gap-[38px] 
+                                justify-center lg:justify-start "
+            >
               {
                 <PlanetListMaker
                   planetData={data}
@@ -71,9 +76,8 @@ export default function Destination({ data }) {
                 />
               }
             </section>
-            
-              {<PlanetDescMaker planetData={data} current={planet} />}
-            
+
+            {<PlanetDescMaker planetData={data} current={planet} />}
           </section>
         </section>
       </main>

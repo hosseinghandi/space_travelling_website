@@ -18,12 +18,16 @@ export default function numberMaker({ current, set, listNum }) {
                                     ? "border-none bg-white-Pure text-black"
                                     : "border-gray-500 text-white-Pure"
                                 }`}
-    > 
-      <span className=" Bellefair 
+    >
+      <span
+        className=" Bellefair 
                         max-sm:text-[1.125rem] 
                         md:text-[1.5rem] 
                         xlg:text-[2rem]
-                        xlg:font-bold">{n}</span>
+                        xlg:font-bold"
+      >
+        {n}
+      </span>
     </div>
   ));
 }

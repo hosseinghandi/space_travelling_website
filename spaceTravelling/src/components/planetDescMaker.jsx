@@ -1,8 +1,7 @@
 // for switching to another item, motion and anmiateprecense is used
 import { motion, AnimatePresence } from "framer-motion";
 
-
-// this componenet takes the planet data and the current presented planet 
+// this componenet takes the planet data and the current presented planet
 // which is getting from react state
 export default function planetDescMaker({ planetData, current }) {
   const planetToRender = planetData.find(
@@ -17,39 +16,52 @@ export default function planetDescMaker({ planetData, current }) {
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
         transition={{ duration: 0.6, ease: "easeInOut" }}
-       className="min-xlg:w-desktop-xlg-destination-desc">
+        className=" min-xlg:w-desktop-xlg-destination-desc 
+                    lg:w-[420px]"
+      >
         <div
-          className="flex flex-col justify-center items-center  
-                      w-full my-6 text-white-Pure lg:items-start "
+          className=" flex flex-col justify-center items-center  
+                      w-full my-6 text-white-Pure 
+                      lg:items-start "
         >
-          <h1 className=" Bellefair uppercase 
+          <h1
+            className=" Bellefair uppercase 
                           max-sm:text-4xl md:text-8xl 
-                          xlg:text-[15rem]">
-            {planetToRender.name}</h1>
+                          xlg:text-[15rem]"
+          >
+            {planetToRender.name}
+          </h1>
           <p
             className="mt-4 border-gray-500 text-center text-[0.9375rem] 
-                       text-white font-extralight max-lg:leading-7
+                       text-white font-extralight 
                        barlow-reg mb-6  
+
+                       max-sm:border-b-1 max-sm:pb-6 max-lg:leading-7
+                       md:text-[1rem] md:w-tablet 
+                       md:border-b-2 md:pb-7
+
+                       lg:w-desktop-destination
+                       lg:text-justify  
                        
-                       max-sm:border-b-1 max-sm:pb-6
-                       md:text-[1rem] md:w-tablet md:border-b-2 md:pb-7
-                       lg:text-justify lg:w-desktop-xlg-destination
-                       xlg:text-[1.75rem] 
                        min-xlg:w-desktop-xlg-destination-desc
-                       min-xlg:h-[200px]
+                       xlg:text-[1.75rem] 
+                       min-xlg:h-[200px] 
+                       
                                           "
           >
             {planetToRender.description}
           </p>
         </div>
         <div
-          className="flex flex-col justify-center items-center 
-                     text-white-Pure text-center gap-4 
-                     md:flex-row md:justify-around md:w-tablet md:mx-auto
-                     min-md:mb-12 lg:w-desktop-destination
-                     lg:w-desktop-xlg-destination-desc
+          className="flex flex-col justify-center gap-4
+                     items-center text-white-Pure text-center
+                       
+                     md:flex-row md:justify-around md:mx-auto
+                     min-md:mb-12 md:w-tablet
+
+                     lg:w-desktop-destination
+                     xlg:w-desktop-xlg-destination-desc
                      "
-                    
         >
           <div>
             <p
@@ -70,7 +82,9 @@ export default function planetDescMaker({ planetData, current }) {
             >
               Est. travel time
             </p>
-            <p className="text-[1.75rem] Bellefair xlg:text-[1.5rem]">{planetToRender.travel}</p>
+            <p className="text-[1.75rem] Bellefair xlg:text-[1.5rem]">
+              {planetToRender.travel}
+            </p>
           </div>
         </div>
       </motion.section>

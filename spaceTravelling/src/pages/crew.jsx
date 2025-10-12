@@ -82,15 +82,19 @@ export default function Crew({ data }) {
               {/* crew's image holder */}
               <div
                 className=" flex flex-col 
-                    justify-center items-center"
+                            justify-center items-center 
+                            "
               >
                 <img
                   loading="lazy"
-                  className="min-lg:absoulte  min-md:bottom-0 
-                             max-sm:max-h-[320px] max-md:max-h-[380px] 
-                             max-lg:max-h-[50vw] min-lg:fixed min-lg:right-20
+                  className="max-sm:fixed max-sm:bottom-0 
+                             min-md:bottom-0 
+                             max-sm:max-h-[320px] min-md:max-h-[380px] 
+                             min-lg:right-20
+                             min-lg:max-h-[50vw] min-lg:fixed 
                              max-slg:max-h-[600px]
-                             xlg:h-[40vw] xlg:right-desktop-xlg 
+                             min-xlg:h-[40vw]
+                             min-xlg:right-desktop-xlg 
                              "
                   src={`${crewPresenting.images.webp}`}
                   alt={`an image of ${crewPresenting}`}

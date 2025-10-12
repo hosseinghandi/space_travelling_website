@@ -1,4 +1,4 @@
-// this component gets the current persona either selected by user or 
+// this component gets the current persona either selected by user or
 // from the initial state of the UseState to feed the HTML of this part
 export default function CrewProfileMaker({ current }) {
   return (
@@ -10,8 +10,10 @@ export default function CrewProfileMaker({ current }) {
                  md:mt-12 md:mb-6
                  lg:items-start "
     >
-      <div className="flex flex-col 
-                      max-md:items-center ">
+      <div
+        className="flex flex-col 
+                      max-md:items-center "
+      >
         <p
           className="Bellefair text-white-Pure 
                      uppercase opacity-50 font-light

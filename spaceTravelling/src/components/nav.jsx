@@ -7,15 +7,18 @@ import closeTab from "/assets/shared/icon-close.svg";
 
 export default function Nav({ menoVisibile, setVisibile, set, current }) {
   return (
-    <div className="max-sm:px-header-mobile fixed w-full z-49
+    <div
+      className="max-sm:px-header-mobile fixed w-full z-49
                     md:items-center md:justify-center md:h-[6rem]
                     md:flex md:flex-row md:px-header-Tablet 
                     lg:px-header-desktop xlg:mt-8
-                    ">
+                    "
+    >
       {/* this div related to the holder of the nav items which for 
       making responsive needs to be changed */}
       <nav
-        className={`            flex fixed flex-col text-white 
+        className={
+          `            flex fixed flex-col text-white 
           
                                 
                                 max-sm:w-[70vw] max-sm:h-[100%] 
@@ -38,11 +41,9 @@ export default function Nav({ menoVisibile, setVisibile, set, current }) {
                                 xlg:h-[10rem] xlg:font-light
                                 xlg:w-[50%]
                                 `
-                              
-                              /* Navigation Links */
 
-
-                              }
+          /* Navigation Links */
+        }
       >
         {/* this div is responsibile for wrappeing 
         the nav elements inside the holder */}
@@ -63,8 +64,7 @@ export default function Nav({ menoVisibile, setVisibile, set, current }) {
               current === "Home"
                 ? "max-sm:border-r-4 md:border-b-2 md:scale-125 "
                 : "max-sm:active:border-r-4 border-gray-500 md:active:border-b-2"
-            }      md:h-[80%] md:flex md:flex-col md:items-center md:justify-center `
-              }
+            }      md:h-[80%] md:flex md:flex-col md:items-center md:justify-center `}
           >
             <div>
               <span className="font-bold mr-3 md:mr-2 ">00</span>Home
@@ -74,7 +74,7 @@ export default function Nav({ menoVisibile, setVisibile, set, current }) {
           {/*  Crew */}
           <div
             onClick={() => {
-              console.log("clicked")
+              console.log("clicked");
               set("Crew");
               setVisibile((prev) => !prev);
             }}
@@ -82,10 +82,9 @@ export default function Nav({ menoVisibile, setVisibile, set, current }) {
               current === "Crew"
                 ? "max-sm:border-r-4 md:border-b-2 md:scale-125 "
                 : "max-sm:active:border-r-4 border-gray-500 md:active:border-b-2"
-            }      md:h-[80%] md:flex md:flex-col md:items-center md:justify-center`
-              }
+            }      md:h-[80%] md:flex md:flex-col md:items-center md:justify-center`}
           >
-            <div >
+            <div>
               <span className="font-bold mr-3 md:mr-2">01</span>Crew
             </div>
           </div>
@@ -100,8 +99,7 @@ export default function Nav({ menoVisibile, setVisibile, set, current }) {
               current === "Destination"
                 ? "max-sm:border-r-4 md:border-b-2 md:scale-125 "
                 : "max-sm:active:border-r-4 border-gray-500 md:active:border-b-2"
-            }      md:h-[80%] md:flex md:flex-col md:items-center md:justify-center`
-              }
+            }      md:h-[80%] md:flex md:flex-col md:items-center md:justify-center`}
           >
             <div>
               <span className="font-bold mr-3 md:mr-2">02</span> Destination
@@ -118,14 +116,12 @@ export default function Nav({ menoVisibile, setVisibile, set, current }) {
               current === "Techno"
                 ? "max-sm:border-r-4 md:border-b-2 md:scale-125 "
                 : "max-sm:active:border-r-4 border-gray-500 md:active:border-b-2"
-            }      md:h-[80%] md:flex md:flex-col md:items-center md:justify-center`
-              }
+            }      md:h-[80%] md:flex md:flex-col md:items-center md:justify-center`}
           >
             <div>
               <span className="font-bold mr-3 md:mr-2">03</span>Technology
             </div>
           </div>
-
         </div>
       </nav>
       {/* logo holder which in case of mobile the those 
@@ -135,7 +131,6 @@ export default function Nav({ menoVisibile, setVisibile, set, current }) {
                         py-header-mobile w-full max-sm:z-3 md:z-0 relative"
       >
         <div>
-
           <img
             onClick={() => {
               set("Home");
@@ -151,7 +146,6 @@ export default function Nav({ menoVisibile, setVisibile, set, current }) {
             src={logo}
             alt="logo of space travelling"
           />
-
         </div>
 
         <img
@@ -184,10 +178,11 @@ export default function Nav({ menoVisibile, setVisibile, set, current }) {
           alt=" a hamburger-meno icon"
         />
       </div>
-      <div className=" 
+      <div
+        className=" 
                       max-md:hidden h-[1px] w-[50%] bg-gray-600  
-                      left-21 -z-1 lg:fixed xlg:h-[3px]">
-        </div>
+                      left-21 -z-1 lg:fixed xlg:h-[3px]"
+      ></div>
     </div>
   );
 }
