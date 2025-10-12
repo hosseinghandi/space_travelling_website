@@ -8,9 +8,9 @@ function Home({ setDestinationPage, setpage }) {
       <div
         className="min-h-screen overflow-scroll scrollbar-hide
                         
-                        max-sm:bg-[url(assets/home/background-home-mobile.jpg)] 
-                        md:bg-[url(assets/home/background-home-tablet.jpg)]
-                        min-lg:bg-[url(assets/home/background-home-desktop.jpg)]
+                        max-sm:bg-[url(/home/background-home-mobile.jpg)] 
+                        md:bg-[url(/home/background-home-tablet.jpg)]
+                        min-lg:bg-[url(/home/background-home-desktop.jpg)]
                         bg-cover bg-center bg-no-repeat fixed 
                         bottom-0 top-0 right-0 w-full "
       >

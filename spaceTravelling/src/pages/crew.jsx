@@ -38,9 +38,9 @@ export default function Crew({ data }) {
     <>
       <div
         className="min-h-screen overflow-auto scrollbar-hide
-                    max-sm:bg-[url(assets/crew/background-crew-mobile.jpg)] 
-                    md:bg-[url(assets/crew/background-crew-tablet.jpg)] 
-                    lg:bg-[url(assets/crew/background-crew-desktop.jpg)] 
+                    max-sm:bg-[url(/crew/background-crew-mobile.jpg)] 
+                    md:bg-[url(/crew/background-crew-tablet.jpg)] 
+                    lg:bg-[url(/crew/background-crew-desktop.jpg)] 
                     bg-cover bg-center bg-no-repeat fixed bottom-0 top-0 w-full "
       >
         {/* post holder  */}
