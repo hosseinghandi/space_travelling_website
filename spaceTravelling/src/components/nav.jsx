@@ -1,9 +1,9 @@
 // this component should render the nav bar and adopt it to the screen size
 
 // import necessary data for making the nav bar
-import logo from "/assets/shared/logo.svg";
-import hamburger from "/assets/shared/icon-hamburger.svg";
-import closeTab from "/assets/shared/icon-close.svg";
+import logo from "/shared/logo.svg";
+import hamburger from "/shared/icon-hamburger.svg";
+import closeTab from "/shared/icon-close.svg";
 
 export default function Nav({ menoVisibile, setVisibile, set, current }) {
   return (

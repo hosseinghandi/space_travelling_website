@@ -16,9 +16,9 @@ export default function Techno({ data }) {
   return (
     <main
       className=" 
-                  max-sm:bg-[url(../technology/background-technology-mobile.jpg)] 
-                  md:bg-[url(../technology/background-technology-tablet.jpg)] 
-                  min-lg:bg-[url(../technology/background-technology-desktop.jpg)]  
+                  max-sm:bg-[url(./technology/background-technology-mobile.jpg)] 
+                  md:bg-[url(./technology/background-technology-tablet.jpg)] 
+                  min-lg:bg-[url(./technology/background-technology-desktop.jpg)]  
                   
                   text-white-Pure min-h-screen h-fit w-full 
                   barlow min-w-[375px] bg-cover bg-no-repeat fixed
