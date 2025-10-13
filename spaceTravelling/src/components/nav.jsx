@@ -37,7 +37,7 @@ export default function Nav({ menoVisibile, setVisibile, set, current }) {
                                 md:z-50 md:bg-[#FFFFFF05]
 
                                 lg:w-[64%] lg:right-0
-                                
+                                lg:text-[1.5rem]
                                 xlg:h-[10rem] xlg:font-light
                                 xlg:w-[60%]
                                 `

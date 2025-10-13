@@ -74,6 +74,7 @@ export default function Crew({ data }) {
                   className=" flex flex-row gap-4 mb-4 
                               justify-center min-lg:absoulte 
                               min-lg:justify-start min-lg:mt-[10vh]
+                              xlg:mt-[2vh]
                               "
                 >
                   {/* this bubble maker makes the points by which the 

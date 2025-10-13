@@ -26,19 +26,19 @@ export default function Destination({ data }) {
                             md:px-header-Tablet md:pt-nav-Tablet
                             lg:px-desktop lg:pt-nav-desktop
                             min-w-[375px] text-white-Pure
-                            xlg:px-desktop-xlg
+                            min-slg:px-desktop-xlg
                             xlg:pt-nav-xlg-desktop "
       >
         <TitleMaker code={"02"} text={"PICK YOUR DESTINATION"} />
         <section
           className="lg:flex lg:flex-row min-lg:gap-[10vw] 
-                            min-lg:justify-around 
+                            min-lg:justify-between
                             min-lg:items-center 
                             "
         >
           {/* image holder and title holder */}
           <section
-            className="flex flex-col justify-center 
+            className="       flex flex-col justify-center 
                               items-center opacity-80 
                               xlg:w-full"
           >

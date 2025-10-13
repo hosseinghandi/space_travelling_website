@@ -28,7 +28,7 @@ export default function Techno({ data }) {
                   
                   lg:px-desktop lg:pt-nav-desktop lg:pr-0
                   
-                  xlg:pl-desktop-xlg
+                  min-slg:pl-desktop-xlg
                   xlg:pt-nav-xlg-desktop "
     >
       <TitleMaker code={"03"} text={"SPACE LAUNCH 101"} />

@@ -88,7 +88,7 @@ function Home({ setDestinationPage, setpage }) {
                             rounded-full flex mx-auto absolute
                             justify-center items-center text-center 
                             active:opacity-25
-                            lg:hover:opacity-25 lg:hover:cursor-pointer
+                            hover:opacity-25 hover:cursor-pointer
                             max-md:w-[35vh] max-md:h-[35vh]
                             md:w-[40vh] md:h-[40vh]
                             lg:w-[45vh] lg:h-[45vh]

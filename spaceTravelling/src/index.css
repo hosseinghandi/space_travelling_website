@@ -31,9 +31,9 @@
   zero of top-0 of the page (from top of desktop) */
   --spacing-nav-mobile :5.5rem;
   --spacing-nav-Tablet : 10rem;
-  --spacing-nav-Tablet-home : 7.75rem;
+  --spacing-nav-Tablet-home : 25vh;
   --spacing-nav-desktop : 25vh;
-  --spacing-nav-lg-desktop-home : 20rem;
+  --spacing-nav-lg-desktop-home :30rem;
   --spacing-nav-lg-desktop : 20vh;
   --spacing-nav-xlg-desktop : 20vh;
   --spacing-xlg-desktop-title-distance : 10rem;
@@ -49,7 +49,7 @@
   --width-desktop-destination : 414px;
   --width-desktop-xlg-destination-desc : 950px;
   --width-desktop-lg-technology-desc : 400px;
-  --width-desktop-slg-technology-desc : 40vw;
+  --width-desktop-slg-technology-desc : 30vw;
   --width-desktop-xlg-technology-desc : 850px;
   --width-desktop-xlg-home-desc : 850px;
   --width-desktop-xlg-destination : 614px;
