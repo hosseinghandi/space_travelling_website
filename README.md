@@ -5,7 +5,7 @@
 A website built as a part of Frontend challenages by [Frontend Mentor](https://www.frontendmentor.io/challenges/space-tourism-multipage-website-gRWj1URZ3)
 This project is built using React and Tailwind CSS for speed, scalability, and a polished user experience, showcaseing a modern layout with smooth animations, intuitive navigation, and a beautiful UI.
 
-Live Demo: [spacing-travelling-website](spacing-travelling-web.netlify.app)
+Live Demo: [spacing-travelling-website](https://spacing-travelling-web.netlify.app/)
 
 # features
 - Responsive design for mobile, tablet, desktop and big screens  
