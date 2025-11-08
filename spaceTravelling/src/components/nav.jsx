@@ -6,6 +6,10 @@ import hamburger from "/shared/icon-hamburger.svg";
 import closeTab from "/shared/icon-close.svg";
 
 export default function Nav({ menoVisibile, setVisibile, set, current }) {
+  
+  
+  
+  
   return (
     <div
       className="max-sm:px-header-mobile fixed w-full z-49
@@ -18,7 +22,7 @@ export default function Nav({ menoVisibile, setVisibile, set, current }) {
       making responsive needs to be changed */}
       <nav
         className={
-          `            flex fixed flex-col text-white 
+          `                    flex fixed flex-col text-white 
           
                                 
                                 max-sm:w-[70vw] max-sm:h-[100%] 
@@ -34,7 +38,7 @@ export default function Nav({ menoVisibile, setVisibile, set, current }) {
                                 md:opacity-100 
                                 md:justify-center md:items-center
                                 md:ml-[8rem] md:w-[84%] md:h-[6rem]
-                                md:z-50 md:bg-[#FFFFFF05]
+                                md:z-50 md:bg-[#0B0D17]
 
                                 lg:w-[64%] lg:right-0
                                 lg:text-[1.5rem]
@@ -48,13 +52,14 @@ export default function Nav({ menoVisibile, setVisibile, set, current }) {
         {/* this div is responsibile for wrappeing 
         the nav elements inside the holder */}
         <div
-          className=" flex flex-col max-sm:gap-[2rem] barlow text-left
+          className=" border-4 border-blue-600
+                      flex flex-col max-sm:gap-[2rem] barlow text-left
                       max-sm:ml-8 max-sm:mt-30  md:items-center
                       md:flex-row ml-[7.375rem] md:gap-[4rem] 
                       md:h-[6rem]  md:w-[100%]
                       xlg:text-[1.5rem] 
                       xlg:justify-center 
-                      xlg:gap-36 xlg:ml-0"
+                      xlg:gap-36 xlg:ml-0 "
         >
           {/* home element */}
           <div
@@ -62,11 +67,7 @@ export default function Nav({ menoVisibile, setVisibile, set, current }) {
               set("Home");
               setVisibile((prev) => !prev);
             }}
-            className={`z-2 ${
-              current === "Home"
-                ? "max-sm:border-r-4 md:border-b-2 md:scale-125 "
-                : "max-sm:active:border-r-4 border-gray-500 md:active:border-b-2"
-            }      md:h-[80%] md:flex md:flex-col md:items-center md:justify-center `}
+            className={navConfigure("Home")}
           >
             <div>
               <span className="font-bold mr-3 md:mr-2 ">00</span>Home
@@ -80,11 +81,7 @@ export default function Nav({ menoVisibile, setVisibile, set, current }) {
               set("Crew");
               setVisibile((prev) => !prev);
             }}
-            className={`z-2 ${
-              current === "Crew"
-                ? "max-sm:border-r-4 md:border-b-2 md:scale-125 "
-                : "max-sm:active:border-r-4 border-gray-500 md:active:border-b-2"
-            }      md:h-[80%] md:flex md:flex-col md:items-center md:justify-center`}
+            className={navConfigure("Crew")}
           >
             <div>
               <span className="font-bold mr-3 md:mr-2">01</span>Crew
@@ -97,11 +94,7 @@ export default function Nav({ menoVisibile, setVisibile, set, current }) {
               set("Destination");
               setVisibile((prev) => !prev);
             }}
-            className={`z-2 ${
-              current === "Destination"
-                ? "max-sm:border-r-4 md:border-b-2 md:scale-125 "
-                : "max-sm:active:border-r-4 border-gray-500 md:active:border-b-2"
-            }      md:h-[80%] md:flex md:flex-col md:items-center md:justify-center`}
+            className={navConfigure("Destination")}
           >
             <div>
               <span className="font-bold mr-3 md:mr-2">02</span> Destination
@@ -114,11 +107,7 @@ export default function Nav({ menoVisibile, setVisibile, set, current }) {
               set("Techno");
               setVisibile((prev) => !prev);
             }}
-            className={`z-2 ${
-              current === "Techno"
-                ? "max-sm:border-r-4 md:border-b-2 md:scale-125 "
-                : "max-sm:active:border-r-4 border-gray-500 md:active:border-b-2"
-            }      md:h-[80%] md:flex md:flex-col md:items-center md:justify-center`}
+            className={navConfigure("Techno")}
           >
             <div>
               <span className="font-bold mr-3 md:mr-2">03</span>Technology

@@ -2,6 +2,8 @@
 // from inside this compoenent that is imported
 
 function Home({ setDestinationPage, setpage }) {
+  
+  
   return (
     <>
       {/* if the destionation is not call render the home page */}
@@ -92,6 +94,7 @@ function Home({ setDestinationPage, setpage }) {
                             max-md:w-[35vh] max-md:h-[35vh]
                             md:w-[40vh] md:h-[40vh]
                             lg:w-[45vh] lg:h-[45vh]
+                            lg:w-[65vh] lg:h-[65vh]
                         "
                 ></button>
                 <div
@@ -99,13 +102,15 @@ function Home({ setDestinationPage, setpage }) {
                                 flex mx-auto justify-center items-center 
                                 text-center hover:cursor-pointer
                                 min-md:w-[25vh] min-md:h-[25vh] 
-                                max-sm:my-[7.5rem] min-md:my-[3.5rem]
+                                max-sm:my-[4.5rem] min-md:mt-[3.5rem]
                                 lg:w-[35vh] lg:h-[35vh]
                                 xlg:w-[45vh] xlg:h-[45vh]
+                                
                                 "
                 >
                   <span
                     className="Bellefair text-[1.25rem] text-black
+                               
                                md:text-[2rem]
                                xlg:text-[4rem]"
                   >

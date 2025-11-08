@@ -23,20 +23,21 @@
 @theme {
   --color-white : #D0D6F9 ;
   --color-white-Pure : #FFFFFF ; 
+
   /* the spacing for x axis of nav bar itself */
   --spacing-header-mobile : 1.5rem;
   --spacing-header-Tablet: 2.5rem;
   --spacing-header-desktop: 4rem;
   /* the spacing of main element (context) from 
   zero of top-0 of the page (from top of desktop) */
-  --spacing-nav-mobile :5.5rem;
-  --spacing-nav-Tablet : 10rem;
-  --spacing-nav-Tablet-home : 25vh;
-  --spacing-nav-desktop : 25vh;
-  --spacing-nav-lg-desktop-home :30rem;
-  --spacing-nav-lg-desktop : 20vh;
-  --spacing-nav-xlg-desktop : 20vh;
-  --spacing-xlg-desktop-title-distance : 10rem;
+  --spacing-nav-mobile: calc(var(--spacing-header-mobile) + 4rem);
+  --spacing-nav-Tablet: 10rem;
+  --spacing-nav-Tablet-home: 25vh;
+  --spacing-nav-desktop: 25vh;
+  --spacing-nav-lg-desktop-home:30rem;
+  --spacing-nav-lg-desktop: 20vh;
+  --spacing-nav-xlg-desktop: 20vh;
+  --spacing-xlg-desktop-title-distance: 10rem;
 
   /* the padding for the main element(context) 
   from the x side of the page  */
