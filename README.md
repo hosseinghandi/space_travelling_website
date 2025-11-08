@@ -1,4 +1,4 @@
-🌍 Spacing Travelling Web
+🌍 Space Travelling website
 
 <img width="1229" height="763" alt="Screenshot 2025-11-08 183837" src="https://github.com/user-attachments/assets/c8344cf9-8852-437e-b1cf-e0e64a90bda6" />
 
