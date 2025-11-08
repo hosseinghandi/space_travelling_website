@@ -1,16 +1,19 @@
-# React + Vite
+🌍 Spacing Travelling Web
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<img width="1229" height="763" alt="Screenshot 2025-11-08 183837" src="https://github.com/user-attachments/assets/c8344cf9-8852-437e-b1cf-e0e64a90bda6" />
 
-Currently, two official plugins are available:
+A clean and responsive travel website built as a part of Frontend challenages by [Frontend Mentor](https://www.frontendmentor.io/challenges/space-tourism-multipage-website-gRWj1URZ3)
+This project is built using React and Tailwind CSS for speed, scalability, and a polished user experience, showcaseing a modern layout with smooth animations, intuitive navigation, and a beautiful UI.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Live Demo: spacing-travelling-web.netlify.app
 
-## React Compiler
+# features
+- Responsive design for mobile, tablet, desktop and big screens  
+- Clean, user-friendly interface
 
-The React Compiler is not enabled on this template. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+# built with:
+- HTML5  
+- CSS3 (including responsive layout) and Tailwind  
+- JavaScript
+- React and vite
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
