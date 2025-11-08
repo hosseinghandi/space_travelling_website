@@ -2,7 +2,7 @@
 
 <img width="1229" height="763" alt="Screenshot 2025-11-08 183837" src="https://github.com/user-attachments/assets/c8344cf9-8852-437e-b1cf-e0e64a90bda6" />
 
-A clean and responsive travel website built as a part of Frontend challenages by [Frontend Mentor](https://www.frontendmentor.io/challenges/space-tourism-multipage-website-gRWj1URZ3)
+A website built as a part of Frontend challenages by [Frontend Mentor](https://www.frontendmentor.io/challenges/space-tourism-multipage-website-gRWj1URZ3)
 This project is built using React and Tailwind CSS for speed, scalability, and a polished user experience, showcaseing a modern layout with smooth animations, intuitive navigation, and a beautiful UI.
 
 Live Demo: spacing-travelling-web.netlify.app
